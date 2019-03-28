@@ -11,8 +11,7 @@ public class Hero {
     private AlterEgo alterEgo;
     private Powers powers;
 
-    public Hero(String Id, Identity identity, AlterEgo alterEgo, Powers powers) {
-        this.id = id;
+    public Hero(Identity identity, AlterEgo alterEgo, Powers powers) {
         this.identity = identity;
         this. alterEgo = alterEgo;
         this.powers = powers;
