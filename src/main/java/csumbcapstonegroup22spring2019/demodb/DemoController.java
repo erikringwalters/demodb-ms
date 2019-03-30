@@ -14,19 +14,19 @@ public class DemoController {
     @Autowired
     IDemoRepository demoRepository;
 
-    @GetMapping ("/allHeroes")
+    @GetMapping (value = "/allHeroes", produces="application/json")
     public List<Hero> getAll() {
         List<Hero> result = demoRepository.findAll();
         return result;
     }
 
-    @GetMapping("/id/{id}")
+    @GetMapping(value = "/id/{id}", produces="applicaiton/json")
     public Hero getHeroById (@PathVariable String id) {
         Hero result = demoRepository.findByRepoId(id);
         return result;
     }
 
-    @GetMapping("/power/{power}")
+    @GetMapping(value = "/power/{power}", produces="application/json")
     public List<Hero> getByPower (@PathVariable String power) {
         List<Hero> result = demoRepository.findByPower(power);
         return result;
