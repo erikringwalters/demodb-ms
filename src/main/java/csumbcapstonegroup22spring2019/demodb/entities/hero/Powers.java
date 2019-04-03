@@ -1,4 +1,4 @@
-package csumbcapstonegroup22spring2019.demodb.entities;
+package csumbcapstonegroup22spring2019.demodb.entities.hero;
 
 import java.util.List;
 

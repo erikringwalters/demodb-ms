@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import csumbcapstonegroup22spring2019.demodb.entities.AlterEgo;
-import csumbcapstonegroup22spring2019.demodb.entities.Hero;
-import csumbcapstonegroup22spring2019.demodb.entities.Powers;
-import csumbcapstonegroup22spring2019.demodb.entities.Identity;
+import csumbcapstonegroup22spring2019.demodb.entities.hero.AlterEgo;
+import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
+import csumbcapstonegroup22spring2019.demodb.entities.hero.Powers;
+import csumbcapstonegroup22spring2019.demodb.entities.hero.Identity;
 
 
 @Component

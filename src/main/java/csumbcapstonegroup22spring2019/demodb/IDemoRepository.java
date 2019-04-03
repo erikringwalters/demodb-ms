@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import csumbcapstonegroup22spring2019.demodb.entities.Hero;
+import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
 
 @Repository
 public interface IDemoRepository extends MongoRepository<Hero, String>{
