@@ -7,8 +7,12 @@
 //   "Set quicktype target language"
 package csumbcapstonegroup22spring2019.demodb.entities.linechart;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "LineChart")
 public class LineChart {
+    @Id
     private String id;
     private String name;
     private Series[] series;
