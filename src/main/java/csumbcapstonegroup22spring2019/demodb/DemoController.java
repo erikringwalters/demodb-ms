@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
 
+
 @RestController
 public class DemoController {
     @Autowired
@@ -20,7 +21,7 @@ public class DemoController {
         return result;
     }
 
-    @GetMapping(value = "/id/{id}", produces="applicaiton/json")
+    @GetMapping(value = "/id/{id}", produces="application/json")
     public Hero getHeroById (@PathVariable String id) {
         Hero result = demoRepository.findByRepoId(id);
         return result;
