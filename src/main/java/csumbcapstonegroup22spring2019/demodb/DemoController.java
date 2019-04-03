@@ -16,7 +16,7 @@ public class DemoController {
     @Autowired
     IDemoRepository demoRepository;
 
-    @GetMapping (value = "/allHeroes", produces="application/json")
+    @GetMapping (value = "/allLines", produces="application/json")
     public List<Hero> getAll() {
         List<Hero> result = demoRepository.findAll();
         return result;

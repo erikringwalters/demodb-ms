@@ -9,9 +9,22 @@ public class Series {
     private long name;
     private long value;
 
-    public long getName() { return name; }
-    public void setName(long value) { this.name = value; }
+    public Series(long name, long value) {
+        this.name = name;
+        this.value = value;
+    }
 
-    public long getValue() { return value; }
-    public void setValue(long value) { this.value = value; }
+    public long getName() {
+        return name; 
+    }
+    public void setName(long value) {
+        this.name = value; 
+    }
+
+    public long getValue() { 
+        return value; 
+    }
+    public void setValue(long value) { 
+        this.value = value; 
+    }
 }
