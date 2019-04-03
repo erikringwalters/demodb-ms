@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
-import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
+//import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
 
 
 @RestController
@@ -16,7 +16,7 @@ public class DemoController {
     @Autowired
     IDemoRepository demoRepository;
 
-    @GetMapping (value = "/allLines", produces="application/json")
+    @GetMapping (value = "/allHeroes", produces="application/json")
     public List<Hero> getAll() {
         List<Hero> result = demoRepository.findAll();
         return result;
@@ -34,9 +34,9 @@ public class DemoController {
         return result;
     }
 
-    @GetMapping (value = "/line-chart1/{id}", produces="application/json")
-    public LineChart getLineChartData (@PathVariable String id) {
-        LineChart result = demoRepository.findByLineChartId(id);
-        return result;
-    }
+    // @GetMapping (value = "/line-chart1/{id}", produces="application/json")
+    // public LineChart getLineChartData (@PathVariable String id) {
+    //     LineChart result = demoRepository.findByLineChartId(id);
+    //     return result;
+    // }
 }
