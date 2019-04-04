@@ -34,6 +34,7 @@ public class DemoDbSeeder implements CommandLineRunner {
         // // add db seeds
         // List<Hero> heroes = Arrays.asList(ironMan, hulk, spiderMan);
         // demoRepo.saveAll(heroes);
+        
         String greenName = "Green";
         Series[] greenSeries = new Series[4];
         greenSeries[0] = new Series(5, 100);
@@ -55,9 +56,9 @@ public class DemoDbSeeder implements CommandLineRunner {
 
         LineChart redLineChart = new LineChart(redName, redSeries);
 
-         // delete db data
-         lineChartRepo.deleteAll();
-         // add db seeds
+        // delete db data
+        lineChartRepo.deleteAll();
+        // add db seeds
         List<LineChart> lineCharts = Arrays.asList(greenLineChart, redLineChart);
         lineChartRepo.saveAll(lineCharts);
     }
