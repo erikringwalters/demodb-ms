@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
-//import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
 
 
 @RestController
@@ -33,10 +32,4 @@ public class DemoController {
         List<Hero> result = demoRepository.findByPower(power);
         return result;
     }
-
-    // @GetMapping (value = "/line-chart1/{id}", produces="application/json")
-    // public LineChart getLineChartData (@PathVariable String id) {
-    //     LineChart result = demoRepository.findByLineChartId(id);
-    //     return result;
-    // }
 }
