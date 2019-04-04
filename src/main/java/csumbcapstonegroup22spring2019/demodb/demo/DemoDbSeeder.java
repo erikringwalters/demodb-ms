@@ -20,16 +20,16 @@ public class DemoDbSeeder implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Hero ironMan = new Hero(new Identity("Tony Stark"), new AlterEgo("Iron Man"), new Powers(Arrays.asList("energy beams","flight")) );
-        Hero hulk = new Hero(new Identity("Bruce Banner"), new AlterEgo("Hulk"), new Powers(Arrays.asList("Transformation","Super Strength")) );
-        Hero spiderMan = new Hero(new Identity("Peter Parker"), new AlterEgo("Spider Man"), new Powers(Arrays.asList("Web Slinging","Super Strength", "Spider Senses")) );
+        // Hero ironMan = new Hero(new Identity("Tony Stark"), new AlterEgo("Iron Man"), new Powers(Arrays.asList("energy beams","flight")) );
+        // Hero hulk = new Hero(new Identity("Bruce Banner"), new AlterEgo("Hulk"), new Powers(Arrays.asList("Transformation","Super Strength")) );
+        // Hero spiderMan = new Hero(new Identity("Peter Parker"), new AlterEgo("Spider Man"), new Powers(Arrays.asList("Web Slinging","Super Strength", "Spider Senses")) );
 
        
-        // delete db data
-        demoRepo.deleteAll();
-        // add db seeds
-        List<Hero> heroes = Arrays.asList(ironMan, hulk, spiderMan);
-        demoRepo.saveAll(heroes);
+        // // delete db data
+        // demoRepo.deleteAll();
+        // // add db seeds
+        // List<Hero> heroes = Arrays.asList(ironMan, hulk, spiderMan);
+        // demoRepo.saveAll(heroes);
     }
 
 }
