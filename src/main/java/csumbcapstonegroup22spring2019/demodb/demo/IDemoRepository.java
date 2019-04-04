@@ -11,10 +11,10 @@ import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
 
 @Repository
 public interface IDemoRepository extends MongoRepository<LineChart, String>{
-    @Query (value = "{'id':?0}")
-    Hero findByRepoId(String id);
+    // @Query (value = "{'id':?0}")
+    // Hero findByRepoId(String id);
 
-    @Query (value = "{'powers.powers':?0}")
-    List<Hero> findByPower(String name);
+    // @Query (value = "{'powers.powers':?0}")
+    // List<Hero> findByPower(String name);
 
 }

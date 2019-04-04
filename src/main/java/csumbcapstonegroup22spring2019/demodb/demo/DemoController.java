@@ -18,7 +18,7 @@ public class DemoController {
     // IDemoRepository demoRepository;
     ILineChartRepository lineChartRepository;
 
-    @GetMapping (value = "/allLineChartData", produces="application/json")
+    @GetMapping (value = "/allLineChart", produces="application/json")
     public List<LineChart> getAll() {
         List<LineChart> result = lineChartRepository.findAll();
         return result;
