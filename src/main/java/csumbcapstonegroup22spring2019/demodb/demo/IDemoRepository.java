@@ -1,12 +1,12 @@
 package csumbcapstonegroup22spring2019.demodb.demo;
 
-import java.util.List;
+// import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.mongodb.repository.Query;
+// import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
+// import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
 import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
 
 @Repository

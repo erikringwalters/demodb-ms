@@ -7,13 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import csumbcapstonegroup22spring2019.demodb.entities.hero.AlterEgo;
-import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
-import csumbcapstonegroup22spring2019.demodb.entities.hero.Powers;
+// import csumbcapstonegroup22spring2019.demodb.entities.hero.AlterEgo;
+// import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
+// import csumbcapstonegroup22spring2019.demodb.entities.hero.Powers;
+// import csumbcapstonegroup22spring2019.demodb.entities.hero.Identity;
 import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
 import csumbcapstonegroup22spring2019.demodb.entities.linechart.Series;
 import csumbcapstonegroup22spring2019.demodb.linechart.ILineChartRepository;
-import csumbcapstonegroup22spring2019.demodb.entities.hero.Identity;
 
 
 @Component

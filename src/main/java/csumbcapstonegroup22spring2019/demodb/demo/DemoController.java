@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+// import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
+// import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
 import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
 import csumbcapstonegroup22spring2019.demodb.linechart.ILineChartRepository;
 
@@ -18,7 +18,7 @@ public class DemoController {
     // IDemoRepository demoRepository;
     ILineChartRepository lineChartRepository;
 
-    @GetMapping (value = "/allLineChart", produces="application/json")
+    @GetMapping (value = "/allLineChartData", produces="application/json")
     public List<LineChart> getAll() {
         List<LineChart> result = lineChartRepository.findAll();
         return result;
