@@ -1,4 +1,4 @@
-package csumbcapstonegroup22spring2019.demodb;
+package csumbcapstonegroup22spring2019.demodb.demo;
 
 import java.util.List;
 
