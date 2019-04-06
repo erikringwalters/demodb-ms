@@ -20,21 +20,20 @@ import csumbcapstonegroup22spring2019.demodb.linechart.ILineChartRepository;
 public class DemoDbSeeder implements CommandLineRunner {
     @Autowired
     // IDemoRepository demoRepo;
-    ILineChartRepository lineChartRepo;
+    IDemoRepository lineChartRepo;
 
     @Override
     public void run(String... args) throws Exception {
         // Hero ironMan = new Hero(new Identity("Tony Stark"), new AlterEgo("Iron Man"), new Powers(Arrays.asList("energy beams","flight")) );
         // Hero hulk = new Hero(new Identity("Bruce Banner"), new AlterEgo("Hulk"), new Powers(Arrays.asList("Transformation","Super Strength")) );
         // Hero spiderMan = new Hero(new Identity("Peter Parker"), new AlterEgo("Spider Man"), new Powers(Arrays.asList("Web Slinging","Super Strength", "Spider Senses")) );
-
        
         // // delete db data
         // demoRepo.deleteAll();
         // // add db seeds
         // List<Hero> heroes = Arrays.asList(ironMan, hulk, spiderMan);
         // demoRepo.saveAll(heroes);
-        
+
         String greenName = "Green";
         Series[] greenSeries = new Series[4];
         greenSeries[0] = new Series(5, 100);
@@ -43,7 +42,6 @@ public class DemoDbSeeder implements CommandLineRunner {
         greenSeries[3] = new Series(20, 750);
         greenSeries[4] = new Series(25, 500);
         
-
         LineChart greenLineChart = new LineChart(greenName, greenSeries);
 
         String redName = "Red";
