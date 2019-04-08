@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import csumbcapstonegroup22spring2019.demodb.entities.hero.Hero;
 import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
-import csumbcapstonegroup22spring2019.demodb.entities.linechart.Series;
 import csumbcapstonegroup22spring2019.demodb.linechart.ILineChartRepository;
 
 

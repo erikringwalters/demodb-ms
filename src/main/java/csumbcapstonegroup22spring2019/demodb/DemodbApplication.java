@@ -1,4 +1,4 @@
-package csumbcapstonegroup22spring2019.demodb.demo;
+package csumbcapstonegroup22spring2019.demodb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
