@@ -10,8 +10,6 @@ import org.springframework.stereotype.Component;
 import csumbcapstonegroup22spring2019.demodb.entities.linechart.LineChart;
 import csumbcapstonegroup22spring2019.demodb.entities.linechart.Series;
 
-
-
 @Component
 public class LineChartDbSeeder implements CommandLineRunner {
     @Autowired
@@ -27,7 +25,6 @@ public class LineChartDbSeeder implements CommandLineRunner {
         greenSeries[3] = new Series(20, 750);
         greenSeries[4] = new Series(25, 500);
         
-
         LineChart greenLineChart = new LineChart(greenName, greenSeries);
 
         String redName = "Red";
