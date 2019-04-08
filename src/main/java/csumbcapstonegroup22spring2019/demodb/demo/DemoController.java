@@ -16,14 +16,14 @@ import csumbcapstonegroup22spring2019.demodb.linechart.ILineChartRepository;
 public class DemoController {
     @Autowired
     IDemoRepository demoRepository;
-    @Autowired
-    ILineChartRepository lineChartRepository;
+    // @Autowired
+    // ILineChartRepository lineChartRepository;
 
-    @GetMapping (value="/allLineChartData", produces="application/json")
-    public List<LineChart> getAllLines() {
-        List<LineChart> result = lineChartRepository.findAll();
-        return result;
-    }
+    // @GetMapping (value="/allLineChartData", produces="application/json")
+    // public List<LineChart> getAllLines() {
+    //     List<LineChart> result = lineChartRepository.findAll();
+    //     return result;
+    // }
     
     @GetMapping (value = "/allHeroes", produces="application/json")
     public List<Hero> getAllHeroes() {
